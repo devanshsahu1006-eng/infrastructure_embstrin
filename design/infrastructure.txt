@@ -1,0 +1,24 @@
+Infrastructure
+    1. Creating suitable data structures that can keep track of information
+        related to the host, devices and the links.
+        a. Keep track of jobs to device mapping.
+        b. Large jobs should have ways to be split into concurrent sub-jobs
+            scheduled on different devices.
+        c. Keep track of the link information between devices in a graph
+            structure.
+
+    2. Identifying algorithms that that can be used to keep track of the
+        topology of the connected devices.
+        a. Create suitable heuristics to help caculate optimal paths from device
+        to device.
+
+    3. Creating firmware that runs on the development boards and interface with
+    the host device at a logical level.
+
+    4. Developing host side software that can provide a common interface/API to
+    connect with various types of boards.
+    
+    5. Allowing debugging information of the host and devices to be accessed
+    via a suitable logging format.
+        a. Host time and device time should be separate from each other.
+        b. Frequency of logging debug information should be configurable.
